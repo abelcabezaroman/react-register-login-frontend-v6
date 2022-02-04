@@ -5,7 +5,7 @@ import { BrowserRouter, Navigate, NavLink, Route, Routes } from "react-router-do
 import AuthButton from "./shared/components/AuthButton/AuthButton";
 import ProfilePage from "./pages/ProfilePage/ProfilePage";
 import { JwtContext } from './shared/contexts/JwtContext';
-import RequireAuth from "./shared/components/PrivateRoute/RequireAuth";
+import RequireAuth from "./shared/components/RequireAuth/RequireAuth";
 import LoginPage from "./pages/LoginPage/LoginPage";
 import UsersPage from "./pages/UsersPage/HelloUser";
 

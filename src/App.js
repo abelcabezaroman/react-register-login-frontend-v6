@@ -20,7 +20,7 @@ function App () {
                         <AuthButton/>
 
                         <nav>
-                            {jwt && <NavLink className="b-btn" to="/hello-user">Profile</NavLink>}
+                            {jwt && <NavLink className="b-btn" to="/profile">Profile</NavLink>}
                             {jwt && <NavLink className="b-btn" to="/users">Users</NavLink>}
                             <NavLink className="b-btn" to="/register">Register</NavLink>
                             {!jwt && <NavLink className="b-btn" to="/login">Login</NavLink>}

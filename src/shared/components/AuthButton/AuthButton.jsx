@@ -8,7 +8,6 @@ export default function AuthButton () {
     const {jwt, setJwt} = useContext(JwtContext);
     let navigate = useNavigate();
     const user = JSON.parse(localStorage.getItem('user'));
-
     const signOut = () => {
         localStorage.removeItem('token');
         localStorage.removeItem('user');
@@ -16,7 +15,7 @@ export default function AuthButton () {
         navigate("/");
     }
 
-    return jwt ? (
+    return jwt && user ? (
         <p>
             Welcome! {user.name}
             <button
